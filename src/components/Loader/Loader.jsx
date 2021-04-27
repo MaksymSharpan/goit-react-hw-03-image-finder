@@ -2,17 +2,19 @@ import React from 'react';
 
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import Loader from 'react-loader-spinner';
+import style from './Loader.module.scss';
 
 class LoaderApp extends React.Component {
   //other logic
   render() {
     return (
       <Loader
-        type="Puff"
+        type="ThreeDots"
         color="#00BFFF"
-        height={100}
-        width={100}
-        timeout={3000} //3 secs
+        height={80}
+        width={80}
+        timeout={3000}
+        className={style.loader}
       />
     );
   }

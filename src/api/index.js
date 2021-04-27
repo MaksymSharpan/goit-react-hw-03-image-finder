@@ -1,2 +1,2 @@
-export { default } from './HttpService';
-export * from './HttpService';
+export { default } from './ApiService';
+export * from './ApiService';
